@@ -1,0 +1,118 @@
+/*! Codigo en el css del index */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color-tec: #1c7924;
+  --hoverFont-color-tec: #EAE3D2;
+  --font-color-tec: #F9F5EB;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* CellPhone */
+/* @media screen and (max-width: 720px) {
+  body {
+    background-color: blue;
+  }
+} */
+
+/* Tablet */
+/* @media screen and (max-width: 1024px) {
+  body {
+    background-color: beige;
+  }
+} */
+
+/* browser */
+/* @media screen and (min-width: 1366px) {
+  body {
+    background-color: red;
+  }
+} */
+
+.headerStyle {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.headerSize{
+  height: 14vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--bg-color-tec);
+
+  position: static;
+  top: 0;
+}
+
+.navBarDistribution {
+  width: 95%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.linksDistribution {
+  height: 18%;
+  width: 75%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.linksDistribution li a {
+  font-size: 1.3rem;
+  color: var(--font-color-tec);
+
+  background-color: var(--bg-color-tec);
+  text-decoration: none;
+  padding: 20px 25px;
+  display: block;
+}
+
+.linksDistribution li a:hover {
+  color: var(--hoverFont-color-tec);
+}
+
+.linksDistribution > li {
+  float: left;
+}
+
+.linksDistribution li ul {
+  display: none;
+  position: absolute;
+}
+
+.linksDistribution li:hover > ul {
+  display: block;
+}
+
+/** Este codigo solo es util cuando hay un sub sub menu */
+/* .linksDistribution li ul li {
+  position: relative;
+}
+
+.linksDistribution li ul li ul {
+  right: -140px;
+  top: 0px;
+} */
+
+.homeButtom {
+  padding: 55px 20px 10px 20px;
+  border-radius: 0 0 60% 60%;
+  background-color: var(--bg-color-tec);;
+}
+.homeButtom img{
+  height: 250px;
+  margin-top: 20px;
+}
